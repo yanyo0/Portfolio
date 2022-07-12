@@ -391,7 +391,7 @@ a{
        padding-top: 1%;
        
     }
-    .box-icon-wisdom:hover .box-icon-items-wisdom {
+    box-icon-wisdom:hover .box-icon-items-wisdom {
         transform: matrix(1, -1, 1, 1, 0 ,0) scale(0.7);
 }
     }
