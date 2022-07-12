@@ -391,7 +391,7 @@ a{
     
     @media (max-width:1300px){
         #wisdom {
-       padding-top: 0%;
+       padding-top: 1%;
        
     }
     .box-icon-wisdom:hover .box-icon-items-wisdom {
@@ -626,9 +626,9 @@ a{
        font-size: 4rem;
     }
     .text-project {
-        transform: translateY(100px);
+        transform: translateY(120px);
         padding: 0 7%;
-        margin: 3%;
+        margin: 5% 3% 3% 3%;
     }
     
 }
