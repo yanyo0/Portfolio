@@ -610,7 +610,7 @@ a{
     @media (max-width:500px) {
         #project{
         padding: 1%;
-        height: auto;
+        
     }
     .project-achieved {
         transform: scale(0.9);
@@ -644,7 +644,7 @@ a{
     #contact {
         box-shadow: inset -20px 20px 18px -11px black ,inset 20px -20px 18px -11px black;
         background-color: #111;
-        padding: 2% 2% ;
+        padding: 1% 1% ;
         box-sizing: border-box;
         width: 100%;
         display: flex;
@@ -656,7 +656,7 @@ a{
         background-color: #111;
         margin: 7% 2% 2% 2%;
         width: 50%;
-        padding: 2%;
+        padding:  2%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -691,7 +691,7 @@ a{
         background-color: #111;
         text-align: center;
         font-size: 1.4rem;
-        margin-top: 2vh;
+        margin-top: 1vh;
         padding: 0% 5%;
         
         
@@ -719,7 +719,7 @@ a{
     .social-items {
         background-color: #111;
         list-style-type: none;
-        margin-top: 3vh;
+        margin-top: 2vh;
         padding: 2%;
         font-size: 1.6rem;
     }
