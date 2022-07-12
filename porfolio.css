@@ -197,7 +197,11 @@ a{
         background-color: rgba(255,255,255,0.1);
         color: #51eb5e;
      }
-     
+     @media (max-width:1280) {
+        .my-name {
+            font-size: 5em;
+        }
+     }
      @media (max-width:1200px) {
         #about-me {
             padding-top: 0%;
@@ -599,9 +603,9 @@ a{
         }
 
     }
-    @media (max-width:1200px) {
+    @media (max-width:1250px) {
         #project {
-            padding-top: 2%;
+            padding-top: ;
         }
 
     }
@@ -851,7 +855,7 @@ a{
         color: #51eb5e;
      }
     
-    @media (max-width:1280px) {
+    @media (max-width:1200px) {
         #contact {
             display: flex;
             flex-direction: column;
