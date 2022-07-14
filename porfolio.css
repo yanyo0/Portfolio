@@ -1,5 +1,7 @@
 /* DESCRIPCION GENERAL!!! */
-
+body {
+    max-width: 1800px;
+}
 * {
     margin: 0;
     font-family: 'VT323', monospace;
@@ -19,6 +21,29 @@ a {
     text-decoration: none;
 }
 
+/*  BORDE SOMBRA */
+
+#header-nav,
+footer {
+    box-shadow: inset -20px 20px 18px -11px #111, inset 20px -20px 18px -11px #111;
+}
+
+#project,
+#wisdom {
+    box-shadow: inset -20px 20px 18px -11px #2c2929, inset 20px -20px 18px -11px #2c2929;
+}
+
+
+#about-me,
+#contact {
+    box-shadow: inset -20px 20px 18px -11px black, inset 20px -20px 18px -11px black;
+}
+
+.about-me-items,
+#about-me figure {
+    box-shadow: 0px 5px 10px 0px #D6D6D6, 0px -5px 10px 0px #D6D6D6;
+}
+
 
 /* DESCRIPCION GENERAL @MEDIA !!! */
 
@@ -32,12 +57,23 @@ a {
     }
 }
 
-/* HEADER !!! */
+/* DESCRIPCION GENERAL TITULO WISDOM PROJECT!!! */
 
+.title-wisdom,
+.title-project {
+    width: 80%;
+    margin: 3% 0 2% 0;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: lighter;
+    transition-duration: 2s;
+}
+
+
+/* HEADER !!! */
 
 #header-nav {
     border-bottom: 1px solid black;
-    box-shadow: inset -20px 20px 18px -11px #111, inset 20px -20px 18px -11px #111;
     padding: 2%;
     width: 100%;
     height: 15vh;
@@ -77,7 +113,7 @@ a {
 
 /* HEADER  @MEDIA !!! */
 
-@media(max-width:1200px) {
+@media(max-width:1300px) {
     #header-nav {
         display: none;
     }
@@ -88,7 +124,6 @@ a {
 
 
 #about-me {
-    box-shadow: inset -20px 20px 18px -11px black, inset 20px -20px 18px -11px black;
     background-color: #111;
     width: 100%;
     padding: 25vh 3vw 15vh 3vw;
@@ -97,7 +132,6 @@ a {
 }
 
 .about-me-items {
-    box-shadow: 0px 5px 10px 0px #D6D6D6, 0px -5px 10px 0px #D6D6D6;
     width: 50%;
     padding: 1%;
     margin: 2%;
@@ -107,20 +141,21 @@ a {
 }
 
 #about-me figure {
-    box-shadow: 0px 5px 10px 0px #D6D6D6, 0px -5px 10px 0px #D6D6D6;
     margin: 2%;
     padding: 1%;
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition-property: transform;
     transition-duration: 1s;
 }
 
 #about-me figure img {
-    width: 100%;
-    max-width: 550px;
+    max-width: 95%;
     height: auto;
     border-radius: 25%;
-    padding: 2%;
+    
 }
 
 
@@ -155,8 +190,6 @@ a {
     box-shadow: 0px 0px 10px 0px #D6D6D6;
 
 }
-
-
 
 
 /* ABOUT ME :HOVER :ACTIVE !!! */
@@ -202,7 +235,6 @@ a {
 
 @media (max-width:1200px) {
     #about-me {
-        padding-top: 0%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -257,7 +289,7 @@ a {
 @media (max-width:450px) {
     #about-me figure {
         width: 90vw;
-        height: 30vh;
+        height: auto;
         box-shadow: none;
         padding: 1%;
     }
@@ -267,7 +299,6 @@ a {
 /* CONOCIMIENTOS !!! */
 
 #wisdom {
-    box-shadow: inset -20px 20px 18px -11px #2c2929, inset 20px -20px 18px -11px #2c2929;
     padding: 10vh 2% 2% 2%;
     width: 100%;
     display: flex;
@@ -275,14 +306,6 @@ a {
     align-items: center;
 }
 
-.title-wisdom {
-    width: 80%;
-    text-align: center;
-    font-size: 4rem;
-    font-weight: lighter;
-    transition-duration: 2s;
-    margin: 3% 0 2% 0;
-}
 
 .text-wisdom {
     text-align: center;
@@ -327,46 +350,34 @@ a {
     font-size: 2em;
 }
 
-.fa-html5 {
+.icon {
     background-color: rgba(1, 1, 1, 0.1);
-    color: red;
     font-size: 500%;
     padding: 3%;
+}
+
+.fa-html5 {
+    color: red;
 }
 
 .fa-css3-alt {
-    background-color: rgba(1, 1, 1, 0.1);
     color: #6B91C7;
-    font-size: 500%;
-    padding: 3%;
 }
 
 .fa-sass {
-    background-color: rgba(1, 1, 1, 0.1);
     color: #BE4BAB;
-    font-size: 500%;
-    padding: 3%;
 }
 
 .fa-js {
-    background-color: rgba(1, 1, 1, 0.1);
     color: #F1DA55;
-    font-size: 500%;
-    padding: 3%;
 }
 
 .fa-react {
-    background-color: rgba(1, 1, 1, 0.1);
     color: aquamarine;
-    font-size: 500%;
-    padding: 3%;
 }
 
 .fa-git-alt {
-    background-color: rgba(1, 1, 1, 0.1);
     color: red;
-    font-size: 500%;
-    padding: 3%;
 }
 
 
@@ -403,7 +414,7 @@ a {
 
 @media (max-width:1300px) {
     #wisdom {
-        padding-top: 1%;
+        padding-top: 5%;
     }
 }
 
@@ -461,9 +472,15 @@ a {
 
 /* CITA !!! */
 
+#quote,
+.fa-quote-right,
+.text-quote,
+.autor-quote {
+    background-color: #111;
+}
+
 #quote {
     width: 100%;
-    background-color: #111;
     text-align: center;
     box-shadow: inset 0 0 10px rgba(255, 255, 255, 1), inset 0 0 20px #51eb5e, inset 0 0 30px #51eb5e;
     padding: 6% 1%;
@@ -476,7 +493,6 @@ a {
 
 
 .fa-quote-right {
-    background-color: #111;
     width: 100px;
     height: 100px;
     font-size: 600%;
@@ -484,7 +500,6 @@ a {
 }
 
 .text-quote {
-    background-color: #111;
     padding: 1% 15%;
     font-size: 1.9rem;
     font-weight: 500;
@@ -493,7 +508,6 @@ a {
 }
 
 .autor-quote {
-    background-color: #111;
     font-size: 1.8rem;
     font-weight: 300;
     padding: 2%;
@@ -525,28 +539,16 @@ a {
     }
 }
 
+
 /* PROYECTOS !!! */
 
 #project {
-    box-shadow: inset -20px 20px 18px -11px #2c2929, inset 20px -20px 18px -11px #2c2929;
     padding: 10vh 2% 2% 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
-
-
-.title-project {
-    width: 70%;
-    text-align: center;
-    font-size: 4rem;
-    font-weight: lighter;
-    padding: 1%;
-    margin: 3% 0 2% 0;
-    transition-duration: 2s;
-}
-
 
 
 .text-project {
@@ -617,6 +619,12 @@ a {
 
 /* PROYECTOS @MEDIA !!! */
 
+@media (max-width:1300px) {
+    #project {
+        padding-top: 5%;
+    }
+}
+
 
 @media (max-width:850px) {
     .project-box {
@@ -665,12 +673,12 @@ a {
 
 
 #contact {
-    box-shadow: inset -20px 20px 18px -11px black, inset 20px -20px 18px -11px black;
     background-color: #111;
     padding: 1%;
     width: 100%;
     display: flex;
 }
+
 
 /* CONTACTO  SOCIAL !!! */
 
@@ -739,8 +747,6 @@ a {
 }
 
 
-
-
 /* CONTACTO  SOCIAL :HOVER !!! */
 
 
@@ -806,7 +812,7 @@ a {
 #surname,
 #email {
     width: 90%;
-    height: 4vh;
+    height: 30px;
     font-size: 1em;
 }
 
@@ -818,7 +824,7 @@ input,
 textarea {
     box-shadow: 0px 0px 5px 0px #D6D6D6;
     padding: 1%;
-    margin-top: 3px;
+    margin-top: 5px;
 }
 
 ::placeholder {
@@ -877,9 +883,6 @@ textarea:focus {
     background-color: rgba(255, 255, 255, 0.1);
     color: #51eb5e;
 }
-
-
-
 
 
 
@@ -959,9 +962,9 @@ textarea:focus {
 
 
 /* FOOTER !!! */
+
 footer {
     width: 100%;
-    box-shadow: inset -20px 20px 18px -11px #111, inset 20px -20px 18px -11px #111;
     padding: 3% 6%;
     display: flex;
     flex-direction: column;
@@ -971,6 +974,7 @@ footer {
 
 
 /* FOOTER  NAV!!! */
+
 #footer-nav-box {
     padding: 2%;
     display: flex;
