@@ -336,14 +336,14 @@ footer {
 }
 
 .items-icon-wisdom {
-    background-color: rgba(1, 1, 1, 0.1);
+    background-color: rgba(1, 1, 1, 0);
     transition-duration: 2s;
     border-radius: 50%;
 }
 
 .container-wisdom p {
     margin: 3%;
-    background-color: rgba(1, 1, 1, 0.1);
+    background-color: rgba(1, 1, 1, 0);
     color: white;
     font-weight: lighter;
     text-align: center;
