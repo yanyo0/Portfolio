@@ -57,7 +57,7 @@ footer {
     }
 }
 
-/* DESCRIPCION GENERAL TITULO WISDOM PROJECT!!! */
+/* DESCRIPCION GENERAL TITULO WISDOM y PROJECT!!! */
 
 .title-wisdom,
 .title-project {
@@ -175,6 +175,7 @@ footer {
 
 .my-description {
     font-size: 1.5em;
+    text-shadow: none;
 }
 
 .i-do {
